@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Big Shoulders Display", cursive;
+}
+.container {
+  background-color: hsl(0, 0%, 95%);
+  height: 100vh;
+  width: 100;
+}
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .boxes {
+    flex-direction: column;
+  }
+  .box1 {
+    border-radius: 15px 15px 15px 15px;
+  }
+}
+.box1 .box2 .box3,
+h1 {
+  color: hsl(0, 0%, 95%);
+  margin-top: 25px;
+}
+.box1 .box2 .box3,
+p {
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-top: 25px;
+}
+
+.box1,
+.box2,
+.box3 {
+  padding: 35px;
+  height: 380px;
+  width: 195px;
+  margin-top: 80px;
+  flex-wrap: wrap;
+}
+.box1 {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 15px 0 0 15px;
+}
+.box1 a {
+  color: hsl(31, 77%, 52%);
+}
+.box2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.box2 a {
+  color: hsl(184, 100%, 22%);
+}
+.box3 {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 15px 15px 0;
+}
+.box3 a {
+  color: hsl(179, 100%, 13%);
+}
+
+button {
+  height: 40px;
+  width: 120px;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 20px;
+  margin-top: 80px;
+  align-content: flex-end;
+}
+button a {
+  text-decoration: none;
+  font-family: "Big Shoulders Display", cursive;
+}
+button:hover {
+  background-color: transparent;
+}
+button a:hover {
+  color: hsl(0, 0%, 95%);
+}
+
+.cta:hover {
+  background-color: transparent;
+}
